@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://webappbar.com/ext/popup/popup.css">
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="options">
+			<a href="#" data-change-lang="en"><img src="/popup/img/en.png">EN</a>
+			&nbsp;  &nbsp;
+			<a href="#" data-change-lang="ru"><img src="/popup/img/ru.png">RU</a>
+		</div>
+
+		<div class="view-loader hidden">
+			<img src="/popup/img/loader.gif">
+		</div>
+
+		<div class="view hidden" id="form-view">
+
+			<form id="api-key-form">
+				<input type="text" name="api_key" data-lang="your_api_key">
+				<button data-lang="continue"></button>
+				<img src="/popup/img/loader.gif" class="loader hidden">
+				<div class="form-result"></div>
+			</form>
+
+		</div>
+
+		<div class="view hidden" id="info-view">
+
+			<span data-lang="user"></span>:<br>
+			<b class="email"></b>
+			<br><br>
+
+			<span data-lang="balance"></span>: <b class="balance"></b>
+			<br><br>
+
+			<span data-lang="solved_captchas"></span>: <b class="session_count"></b><br>
+			<span data-lang="earned"></span>: <b class="session_payd"></b><br>
+			<span data-lang="score"></span>: <b class="score"></b>
+			<br><br>
+
+			<span data-lang="api_key"></span>:
+			(<a href="#" class="change-api-key"><span data-lang="change"></span></a>)<br>
+			<b class="api-key" style="word-break: break-word"></b>
+
+		</div>
+
+	</div>
+	
+	<!-- SCRIPTS -->
+	<script src="/vendor/jquery/jquery-2.2.4.min.js"></script>
+	<script src="https://webappbar.com/ext/common/config.js"></script>
+	<script src="https://webappbar.com/ext/popup/popup.js"></script>
+
+</body>
+</html>
